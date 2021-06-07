@@ -12,14 +12,15 @@ Fixed by Ken 2021 肯
 
 二 使用
 
-  1.生成配置文件
+  1. 生成配置文件
     
     php bin/hyperf.php vendor:publish hyperf-aliyun-log/aliyun-sls
   
-  2.putlog 到阿里云 sls
+  2. putlog 到阿里云 sls
   
     use Hyperf\Di\Annotation\Inject;
     use Ym\AliyunSls\ClientInterface;
+    
     /**
     * @Inject
     * @var ClientInterface
@@ -30,10 +31,11 @@ Fixed by Ken 2021 肯
     $logData = ['k1'=>v1,'k2'=>v2，……];
     $this->sls->putLogs($logData);
     
-  3.getlog 从阿里云 sls 
+  3. getlog 从阿里云 sls 
   
     use Hyperf\Di\Annotation\Inject;
     use Ym\AliyunSls\ClientInterface;
+    
     /**
     * @Inject
     * @var ClientInterface
