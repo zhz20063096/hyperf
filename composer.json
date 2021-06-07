@@ -1,5 +1,5 @@
 {
-    "name": "yoctometre/aliyun-sls",
+    "name": "hyperf/aliyun-sls",
     "description": "AliYun SLS Log For Hyperf",
     "license": "MIT",
     "keywords": [
