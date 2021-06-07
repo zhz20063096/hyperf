@@ -1,18 +1,5 @@
 <?php
 
-//declare(strict_types=1);
-/**
- * Created by PhpStorm.
- *​
- * PutLogsRequest.php
- *
- * The request used to send data to log server.
- *
- * User：YM
- * Date：2019/12/24
- * Time：下午4:11
- */
-
 
 namespace Ym\AliyunSls\Request;
 
