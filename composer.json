@@ -1,5 +1,5 @@
 {
-    "name": "hyperf/aliyun-sls",
+    "name": "hyperf-aliyun-log/aliyun-sls",
     "description": "AliYun SLS Log For Hyperf",
     "license": "MIT",
     "keywords": [
