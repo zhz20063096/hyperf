@@ -7,10 +7,12 @@ Fixed by Ken 2021 肯
 
 
 一 安装
+
 composer require hyperf-aliyun-log/aliyun-sls
 
 二 使用
   1.生成配置文件
+  
     php bin/hyperf.php vendor:publish hyperf-aliyun-log/aliyun-sls
   
   2.putlog 到阿里云 sls
