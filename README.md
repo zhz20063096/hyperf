@@ -63,11 +63,15 @@ Fixed by Ken 2021 肯
      * @param bool $reverse
      *            if reverse is set to true, the query will return the latest logs first
      */
+     
     $response = $this->sls->getLogs($project, $logstore, $from, $to, $topic, $query, $line, $offset, $reverse);
-    foreach($response->getLogs() as $log){
-        $datas[] = $log->getContents();
+    if ($response->getCount()[0] > 0) {
+        foreach($response->getLogs() as $log){
+            $datas[] = $log->getContents();
+        }
+        print_r($datas);
     }
-    print_r($datas);
+    
     
        
        
